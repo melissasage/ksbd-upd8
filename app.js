@@ -1,7 +1,7 @@
 const Parser = require('rss-parser')
 const https = require('https')
 const querystring = require('querystring')
-const { MASTODON_AUTH } = require('./.env')
+require('dotenv').config()
 
 const parser = new Parser()
 
@@ -16,7 +16,7 @@ const mastodonPost = status => {
     path: "/api/v1/statuses/",
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${MASTODON_AUTH}`,
+      Authorization: `Bearer ${process.env.MASTODON_AUTH}`,
     }
   }
 

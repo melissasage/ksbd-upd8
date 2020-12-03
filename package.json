@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "rss-parser": "^3.9.0"
   },
   "devDependencies": {},
