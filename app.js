@@ -1,7 +1,7 @@
 const Parser = require('rss-parser')
 const https = require('https')
 const querystring = require('querystring')
-const { MASTODON_AUTH } = require('./secrets')
+const { MASTODON_AUTH } = require('./.env')
 
 const parser = new Parser()
 
