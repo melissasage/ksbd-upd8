@@ -42,4 +42,4 @@ const main = async (intervalInMins) => {
   if (now - published <= interval) mastodonPost(compose(latest))
 }
 
-main(15)
+main(10)
